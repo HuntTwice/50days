@@ -1,0 +1,33 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: antiquewhite;
+    margin: 0;
+}
+
+.title {
+    /*position: ;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    font-size: 7rem;
+    color: lightpink;
+    display: flex;
+}
+
+
+#todo{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.todo-input{
+    color: palevioletred;
+}
+
+
+
+
