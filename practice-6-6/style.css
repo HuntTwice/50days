@@ -1,0 +1,97 @@
+
+body{
+    /*background: beige;*/
+    margin: 0;
+}
+*{
+    /*margin-bottom: 2rem;*/
+    /*font-size: 22px;*/
+}
+
+/*id选择器*/
+#container2{
+    background: palevioletred;
+    /*font-size: 10rem;*/
+    border: beige dashed;
+    width: 50vh;
+    height: 200px;
+}
+
+/*类选择器*/
+.container3{
+    background: violet;
+    border: yellow  solid;
+    height: 100px;
+}
+
+/*元素选择器*/
+p{
+    background: white;
+    font-size: 22px;
+    color: red;
+    font-family: "方正舒体";
+}
+
+
+
+
+
+#container6{
+    background: darkorange;
+    width: 600px;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid black;
+    display: flex;
+    flex-flow: column;
+
+    /*padding: 10px;*/
+}
+#container6 > div{
+    background: lightseagreen;
+    flex: 1;
+    margin: 0;
+}
+
+#container7{
+    background: bisque;
+    border: 5px greenyellow dashed;
+    height: 200px;
+}
+#container7 div {
+    background: darksalmon;
+    /*border: dashed black 1px;*/
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-flow: row ;
+    gap: 10px;
+}
+
+#container7 span{
+    flex: 1;
+    background: lightpink;
+    height: 50px;
+}
+
+#container8{
+    background: black;
+    width: 100vh;
+    height: 500px;
+}
+
+#container8-1{
+    background: darkslategray;
+    height: 100px;
+    text-align: center;
+    /*border: 3px solid black;*/
+    margin-bottom: 10px;
+}
+
+#container8-2{
+    /*border: 3px solid black;*/
+    background: darkgray;
+    height: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
