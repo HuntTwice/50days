@@ -3,11 +3,22 @@ body{
     /*background: beige;*/
     margin: 0;
 }
-*{
-    /*margin-bottom: 2rem;*/
-    /*font-size: 22px;*/
+h2{
+    margin-top: 5rem;
 }
-
+#ad{
+    position: fixed;
+    top: 5rem;
+    right: 10px;
+    width: 50px;
+    height: 200px;
+    background: bisque;
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
 /*id选择器*/
 #container2{
     background: palevioletred;
@@ -95,3 +106,31 @@ p{
     text-align: center;
     margin-top: 20px;
 }
+
+a:link{
+    color: orangered;
+}
+
+a:visited{
+    color: tomato;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: gray;
+}
+
+
+#sea::first-letter{
+    font-size: 2em;
+}
+
+#sea::first-line{
+    font-weight: bold;
+}
+
+#sea::before { content: "🌊 "; }          /* 内容前插入 */
+#sea::after { content: " ✅"; }

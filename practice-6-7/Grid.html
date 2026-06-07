@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格布局</title>
+    <style>
+        #container{
+            width: 100vh;
+            height: 80vh;
+            background: bisque;
+            display: grid;
+        }
+        #container > div{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="item1">item1</div>
+    <div id="item2">item2</div>
+    <div id="item3">item3</div>
+    <div id="item4">item4</div>
+    <div id="item5">item5</div>
+    <div id="item6">item6</div>
+    <div id="item7">item7</div>
+    <div id="item8">item8</div>
+    <div id="item9">item9</div>
+</div>
+
+<script>
+    let itemList = document.querySelectorAll('#container > div');
+    let colors = ['lightgoldenrodyellow',
+    'lightpink',
+    'lavender',
+    'lightsalmon',
+    'tomato',
+    'cadetblue',
+    'darkseagreen',
+    'gold',
+    'lightcoral']
+    for (var i = 0; i<itemList.length;i++){
+        itemList[i].style.background = colors[i];
+    }
+</script>
+</body>
+</html>
