@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <title>网格布局</title>
     <style>
-        #container{
+        #container {
             width: 100vh;
             height: 80vh;
             background: bisque;
             display: grid;
+            grid-template-rows: repeat(3,100px);
+            grid-template-columns: repeat(3,100px);
+            grid-template-areas: "a a a" "b b d" "c c c";
+            /*justify-items: left;*/
+            grid-gap: 10px 100px;
         }
-        #container > div{
-            width: 100px;
-            height: 100px;
+        /*#container > div{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*}*/
+        /*#item1{*/
+        /*    grid-column-start: 1;*/
+        /*    grid-column-end: 4;*/
+        /*}*/
+        #item1{
+            grid-area: a;
+        }
+        #item2{
+            grid-area: b;
         }
     </style>
 </head>
@@ -24,9 +39,9 @@
     <div id="item4">item4</div>
     <div id="item5">item5</div>
     <div id="item6">item6</div>
-    <div id="item7">item7</div>
-    <div id="item8">item8</div>
-    <div id="item9">item9</div>
+    <!-- <div id="item7">item7</div> -->
+    <!-- <div id="item8">item8</div> -->
+    <!-- <div id="item9">item9</div> -->
 </div>
 
 <script>
