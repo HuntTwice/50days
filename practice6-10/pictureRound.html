@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .roundComponent{
+            width: 400px;
+            height: 200px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="roundComponent"></div>
+
+    <div class="buttonGroup">
+        <button id="btn-pre">上一张</button>
+        <button id="btn-next">下一张</button>
+    </div>
+</div>
+<script src="around.js"></script>
+</body>
+</html>
