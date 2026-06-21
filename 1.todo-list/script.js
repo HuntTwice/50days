@@ -7,3 +7,6 @@ confirmBtn.addEventListener("click", ev => {
     console.log(`${str}${toDoValue}`);
     toDoItem.value = '';
 })
+
+
+// document.createElement()
